@@ -10,7 +10,7 @@
 @import GoogleMobileAds;
 
 // Testing things? Uncomment the line below and various events will be logged.
-#define DEBUG_CJPADCONTROLLER
+//#define DEBUG_CJPADCONTROLLER
 
 
 typedef NS_ENUM(NSInteger, CJPAdNetwork) {

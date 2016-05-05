@@ -222,6 +222,12 @@ static NSString * const CJPAdsPurchasedKey = @"adRemovalPurchased";
             CJPLog(@"AdMob targeting: Birthday has been set.");
         }
         
+        // Content
+        if (_adMobContent != nil) {
+            adMobRequest.contentURL = _adMobContent;
+            CJPLog(@"AdMob targeting: Content has been set.");
+        }
+        
         // Location
         if (_adMobUserLocation != nil) {
             [adMobRequest setLocationWithLatitude:[[_adMobUserLocation objectForKey:@"latitude"] floatValue] longitude:[[_adMobUserLocation objectForKey:@"longitude"] floatValue] accuracy:[[_adMobUserLocation objectForKey:@"accuracy"] floatValue]];

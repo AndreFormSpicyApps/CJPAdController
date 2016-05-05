@@ -135,6 +135,9 @@ typedef NS_ENUM(NSInteger, CJPAdPosition) {
 /// Birthday - Optional. NSDate of the user's birthday. Can be used to improve ad relevancy.
 @property (nonatomic, copy) NSDate *adMobBirthday;
 
+/// Content - Optional. NSString of the user's ContentContent. Can be used to improve ad relevancy.
+@property (nonatomic, copy) NSString *adMobContent;
+
 /// Location - Optional. If you use CoreLocation you can provide the user's location with this method instead of the description above.
 /// There is no need to provide both. If you do, this method will take precedence.
 - (void)setLocationWithLatitude:(CGFloat)latitude
